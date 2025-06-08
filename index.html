@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HRMS Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="employee.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1>HRMS</h1>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="applyleave.html">Apply Leave</a></li>
+        <li><a href="approval.html">Leave History</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h2>Dashboard</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Total Leaves</h3>
+          <h2 id="totalLeaves">0</h2>
+        </div>
+        <div class="card">
+          <h3>Pending Leaves</h3>
+          <h2 id="pendingLeaves">0</h2>
+        </div>
+        <div class="card">
+          <h3>Approved Leaves</h3>
+          <h2 id="approvedLeaves">0</h2>
+        </div>
+      </div>
+
+      <h2>Leave Requests</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>Leave Type</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="leaveRequestTable">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

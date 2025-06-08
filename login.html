@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="employee.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Side: Form -->
+    <div class="left-side">
+      <h1>Welcome back!</h1><br />
+      <h3>Please enter your details</h3><br />
+
+      <label for="box"><h2>Email address</h2></label>
+      <input type="email" id="box" placeholder="Enter your email" required /><br />
+
+      <label for="box1"><h2>Password</h2></label>
+      <input type="password" id="box1" placeholder="Enter your password" required /><br /><br />
+
+      <button id="loginBtn" onclick="return validate()"><h3>Login</h3></button>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div class="right-side">
+      <img src="Screenshot 2025-05-20 145512.png" alt="Screenshot" id="page1" />
+    </div>
+  </div>
+</body>
+</html>

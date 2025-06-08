@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apply Leave</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="employee.js" defer></script>
+</head>
+<body>
+  <form id="leaveForm">
+    <div id="holiday">
+      <h3 id="optional">Leaves:</h3><br>
+      <h5> • Select the appropriate Leave Name, then select the Start Date and End Date of the leave.</h5><br>
+      <h3 id="optional1">Optional Holiday: </h3><br>
+      <h5>• To apply for optional holiday, please select the Leave Name as Optional Holiday.</h5>
+      <h5> • Select holiday name and year under Reasons and Year, holiday date will be populated in Start Date & End Date.</h5><br>
+      <h3 id="optional2">Notes: </h3><br>
+      <h5> • Leaves should be applied prior to leave date and to the extent of leaves credited.</h5>
+      <h5> • Monthly cut off for leave application is 5th. You can apply for leave for previous two months till 5th of current month.</h5>
+      <h5> • Leaves can be applied as per available balance as on leave Start Date.</h5>  
+    </div><br><br>
+
+    <h3 id="details">Leave Details</h3><br><br>
+    <div id="leave">
+      <label for="leaveType" required>Leave Name</label>
+      <select id="leaveType" required>
+        <option value="">-- Select Leave --</option>
+        <option value="Special Leave IND">Special Leave IND</option>
+        <option value="Earned leave">Earned leave</option>
+        <option value="Optional Holiday IND">Optional Holiday IND</option>
+      </select><br><br>
+
+      <label for="startDate" id="pvr" required>Start Date</label>
+      <input type="date" id="startDate" required><br><br>
+
+      <label for="endDate" id="pvvr">End Date</label>
+      <input type="date" id="endDate" required><br><br>
+
+      <label for="partialDays" required>Partial Days</label>
+      <select id="partialDays" required>
+        <option value="">-- Select Partial Days --</option>
+        <option value="None">None</option>
+        <option value="All Days">All Days</option>
+        <option value="Start Day Only">Start Day Only</option>
+        <option value="End Day Only">End Day Only</option>
+      </select><br><br>
+    </div>
+
+    <h3 id="details1">Comments</h3><br><br>
+    <div id="reqcmd">
+      <label for="reason" required>Requestor Comments:</label><br><br>
+      <textarea id="reason" name="reason" rows="3" cols="40" placeholder="Enter your reason here..."></textarea><br><br>
+
+      <button id="sub" type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>

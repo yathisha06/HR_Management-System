@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leave History</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="employee.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1>HRMS</h1>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="applyleave.html">Apply Leave</a></li>
+        <li><a href="approval.html">Leave History</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h2>Leave History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Leave Type</th>
+            <th>Partial Days</th>
+            <th>Status</th>
+            <th>Action</th> <!-- Required for Approve/Reject buttons -->
+          </tr>
+        </thead>
+        <tbody id="historyTableBody">
+          <!-- Populated dynamically by JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

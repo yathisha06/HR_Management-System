@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.left-side {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.right-side {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#box {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 15px;
+}
+#box1{
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 15px;
+}
+#loginBtn{
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 15px;
+  background-color: #004d99;
+  color: #e2f0fb;
+  
+}
+
+#page {
+  display: inline-block;
+  padding: 10px;
+  width: 40%;
+  background-color: rgb(42, 42, 99);
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#page:hover {
+  background-color: rgb(30, 30, 80);
+}
+
+
+#page1 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+#rdy{
+    text-align: right;
+}
+#rdy1{
+    text-align:center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar a {
+  color: white;           /* Make link text white */
+  text-decoration: none;  /* Remove underline */
+}
+
+.sidebar a:hover {
+  color: #a0c4ff;         /* Optional: change color on hover for effect */
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+.sidebar {
+  width: 220px;
+  background-color: #1e3a5f;
+  color: white;
+  padding: 20px;
+  height: 600px; /* changed from 40pc to 400px — adjust as needed */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #a0c4ff;
+  text-decoration: underline;
+}
+
+.sidebar h1 {
+  color: white; /* ensures HRMS text is white */
+}
+
+
+.sidebar a:hover {
+  color: #a0c4ff; /* lighter blue on hover */
+  text-decoration: underline;
+}
+
+
+.sidebar h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f5f9fc;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background-color: #e2f0fb;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  height: 4pc;
+}
+
+thead {
+  background-color: #e6eef8;
+  font-weight: bold;
+}
+#reqcmd{
+  text-align: center;
+}
+#leave{
+  text-align: center;
+}
+#app{
+  padding: 2rem;;
+}
+#optional{
+  color:blue;
+}
+#optional1{
+  color:blue;
+}
+#optional2{
+  color:blue;
+}
+#details{
+  color: brown;
+}
+#details1{
+  color: brown;
+}
+#sub{
+    max-width: 10%;
+    padding: 1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+/* General body and font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #004d99;
+  margin-bottom: 30px;
+}
+
+/* Styling the first row with inputs (inside your invalid <tb> tag) */
+tb tr {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+tb th {
+  font-weight: 600;
+  color:  #1e3a5f;
+  min-width: 100px;
+}
+
+/* Inputs and selects styling */
+tb input[type="date"],
+tb select {
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1.8px solid #1e3a5f;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+tb input[type="date"]:focus,
+tb select:focus {
+  border-color:  #1e3a5f;
+  outline: none;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table headers */
+table th {
+  background-color:  #1e3a5f;
+  color: white;
+  padding: 15px 10px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Table data cells */
+table td {
+  padding: 12px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Alternate row colors */
+table tbody tr:nth-child(even) {
+  background-color: #f4f9ff;
+}
+
+/* On hover highlight */
+table tbody tr:hover {
+  background-color: #d0e4ff;
+  cursor: default;
+}
+
+/* Styling h2 and h3 inside tables */
+table th h2, table td h3 {
+  margin: 0;
+  font-weight: 700;
+  color: #003366;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  tb tr {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  tb th {
+    min-width: auto;
+    margin-bottom: 6px;
+  }
+
+  table, tb {
+    font-size: 10px;
+  }
+}
+#char{
+  display: flex;
+  padding: 4rem ;
+}
+#hov{
+  color: white;
+  text-decoration: none; 
+}
+#ser{
+  background-color: #244064;
+  color: white;
+  padding: 1rem ;
+}
+#see{
+  color: #244064 ;
+}
